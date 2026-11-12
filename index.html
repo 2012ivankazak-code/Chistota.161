@@ -1,0 +1,2944 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Чистота.161 — Премиальный клининг в Ростове-на-Дону | B2B и B2C</title>
+  <meta name="description" content="Премиальный клининг коттеджей, квартир после ремонта, офисов и складов в Ростове-на-Дону и РО от «Чистота.161». Фиксированная смета, официальный договор, строгий NDA. Тел: +7 (952) 574-51-77, +7 (928) 197-23-88.">
+  <meta property="og:title" content="Чистота.161 — Премиальный клининг в Ростове-на-Дону">
+  <meta property="og:description" content="Клининг премиум B2C и B2B. Фиксированная смета до начала работ, договор, гарантия конфиденциальности (NDA).">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#526640">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & CSS VARIABLES
+       Palette: Warm beige/cream bg, olive/sage accent, dark espresso text
+       ========================================================================== */
+    :root {
+      /* Backgrounds */
+      --bg-cream: #F8F5EE;
+      --bg-cream-soft: #FAF8F3;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-sand: #F1ECE2;
+      --bg-sand-dark: #E6DFD2;
+
+      /* Accents: Olive & Sage */
+      --accent-olive: #526640;
+      --accent-olive-hover: #3E4E30;
+      --accent-olive-active: #313F26;
+      --accent-sage: #7A8E67;
+      --accent-sage-light: #EDF3E8;
+      --accent-sage-border: #D5E1CE;
+      --accent-gold: #C29853;
+
+      /* Typography: Dark Brown & Warm Neutrals */
+      --text-main: #281F17;
+      --text-muted: #594E42;
+      --text-light: #807365;
+      --text-inverse: #FFFFFF;
+
+      /* Borders & Shadows */
+      --border-subtle: #E5DED2;
+      --border-accent: rgba(82, 102, 64, 0.25);
+      --shadow-sm: 0 2px 8px rgba(40, 31, 23, 0.04);
+      --shadow-md: 0 6px 20px rgba(40, 31, 23, 0.07);
+      --shadow-lg: 0 16px 36px rgba(40, 31, 23, 0.1);
+
+      /* Typography Stacks */
+      --font-serif: "Playfair Display", "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+      /* Dimensions & Spacing */
+      --container-max: 1200px;
+      --header-height: 80px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ==========================================================================
+       TYPOGRAPHY
+       ========================================================================== */
+    h1, h2, h3, h4, .serif-font {
+      font-family: var(--font-serif);
+      color: var(--text-main);
+      font-weight: 700;
+      line-height: 1.25;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 5.5vw, 3.4rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      letter-spacing: -0.015em;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      font-size: 1rem;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background-color: var(--accent-sage-light);
+      border: 1px solid var(--accent-sage-border);
+      color: var(--accent-olive);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      max-width: 100%;
+    }
+
+    /* ==========================================================================
+       BUTTONS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 22px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      white-space: normal;
+      line-height: 1.3;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-olive);
+      color: var(--text-inverse);
+      box-shadow: 0 4px 14px rgba(82, 102, 64, 0.3);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-olive-hover);
+      box-shadow: 0 6px 18px rgba(82, 102, 64, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .btn-primary:active {
+      background-color: var(--accent-olive-active);
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent-olive);
+      color: var(--accent-olive);
+      background-color: #FAF9F6;
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.88rem;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: rgba(248, 245, 238, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .logo-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent-olive);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .logo-region {
+      color: var(--accent-gold);
+      font-style: italic;
+    }
+
+    .logo-caption {
+      font-size: 0.68rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+    }
+
+    .nav-desktop {
+      display: none;
+    }
+
+    .nav-desktop ul {
+      display: flex;
+      list-style: none;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .nav-desktop a {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-desktop a:hover {
+      color: var(--accent-olive);
+    }
+
+    .nav-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent-olive);
+      transition: width 0.25s ease;
+    }
+
+    .nav-desktop a:hover::after {
+      width: 100%;
+    }
+
+    .header-contacts {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+    }
+
+    .header-phone {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header-phone:hover {
+      color: var(--accent-olive);
+    }
+
+    .header-schedule {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* Mobile Hamburger */
+    .burger-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      gap: 5px;
+      z-index: 1100;
+      flex-shrink: 0;
+    }
+
+    .burger-line {
+      width: 20px;
+      height: 2px;
+      background-color: var(--text-main);
+      transition: all 0.25s ease;
+      transform-origin: center;
+    }
+
+    .burger-btn.active .burger-line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .burger-btn.active .burger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .burger-btn.active .burger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      width: 100%;
+      height: calc(100vh - var(--header-height));
+      background-color: var(--bg-cream);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out, visibility 0.3s;
+      visibility: hidden;
+      pointer-events: none;
+      overflow-y: auto;
+      z-index: 1050;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .mobile-menu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--accent-olive);
+    }
+
+    .mobile-menu a.header-phone {
+      font-family: var(--font-sans);
+    }
+
+    .mobile-menu a.btn-primary {
+      color: var(--text-inverse) !important;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .mobile-menu a.btn-primary:hover {
+      color: var(--text-inverse) !important;
+    }
+
+    .mobile-contacts-box {
+      margin-top: auto;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      padding: 40px 0 60px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .hero-trust-bar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .trust-icon {
+      color: var(--accent-olive);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Hero Visual Card (with requested beige-green CSS gradient placeholder) */
+    .hero-visual-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-subtle);
+      /* Organic layered CSS gradient placeholder in beige-green tones */
+      background: linear-gradient(135deg, #F5F1E6 0%, #E8EFE3 50%, #DDE8D4 100%);
+    }
+
+    .hero-visual-card::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(122, 142, 103, 0.25) 0%, rgba(248, 245, 238, 0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-visual-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent-olive);
+      box-shadow: var(--shadow-sm);
+      align-self: flex-start;
+    }
+
+    .hero-visual-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 0;
+      z-index: 2;
+    }
+
+    .avatar-icon-circle {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FFFFFF 0%, #E3EBDD 100%);
+      border: 3px solid #FFFFFF;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-olive);
+      margin-bottom: 14px;
+    }
+
+    .hero-visual-title {
+      font-size: 1.25rem;
+      font-family: var(--font-serif);
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .hero-visual-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 280px;
+    }
+
+    .hero-visual-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-main);
+      border: 1px solid rgba(82, 102, 64, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       SECTION: USP & GUARANTEES
+       ========================================================================== */
+    .section-usp {
+      padding: 70px 0;
+      background-color: var(--bg-cream-soft);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .usp-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .usp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 26px 22px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .usp-card:hover {
+      border-color: var(--accent-olive);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .usp-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background-color: var(--accent-sage-light);
+      color: var(--accent-olive);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .usp-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+    }
+
+    .usp-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       SECTION: 15 ПУНКТОВ ГЕНЕРАЛЬНОЙ УБОРКИ
+       Mobile-first: 1 column on mobile, 3 columns on desktop (768px+)
+       Exact 15 items, no abbreviations or reformulations
+       ========================================================================== */
+    .section-checklist {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Mobile: 1 column */
+      gap: 16px;
+    }
+
+    .check-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .check-item:hover {
+      border-color: var(--accent-olive);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .check-number {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-olive);
+      background-color: var(--accent-sage-light);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .check-text {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    .check-badge-icon {
+      color: var(--accent-olive);
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    .checklist-footer {
+      margin-top: 40px;
+      background-color: var(--bg-sand);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      text-align: center;
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       SECTION: B2B & B2C SEGMENTS
+       ========================================================================== */
+    .section-segments {
+      padding: 70px 0;
+      background-color: var(--bg-cream-soft);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .segments-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .segment-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .segment-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-olive);
+    }
+
+    .segment-title {
+      font-size: 1.6rem;
+    }
+
+    .segment-desc {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    .segment-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .segment-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.94rem;
+      color: var(--text-main);
+    }
+
+    .segment-features svg {
+      color: var(--accent-olive);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ==========================================================================
+       SECTION: CALCULATOR
+       Real-time calculation:
+       General = area * 120
+       After repair = area * 180
+       Extras: sofa (+2500), oven (+1200), fridge (+1000)
+       ========================================================================== */
+    .section-calculator {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .calc-wrapper {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-lg);
+      padding: 24px 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .calc-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .calc-label {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Service Type Radio Cards */
+    .type-switcher {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .type-option {
+      position: relative;
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      background: var(--bg-cream-soft);
+      box-sizing: border-box;
+    }
+
+    .type-option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .type-option.active {
+      border-color: var(--accent-olive);
+      background-color: var(--accent-sage-light);
+    }
+
+    .type-option-title {
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      gap: 8px;
+    }
+
+    .type-option-rate {
+      color: var(--accent-olive);
+      font-size: 0.9rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .type-option-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    /* Area Slider & Input */
+    .area-input-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .area-number-wrap {
+      position: relative;
+      width: 95px;
+      flex-shrink: 0;
+    }
+
+    .area-number-input {
+      width: 100%;
+      padding: 10px 28px 10px 10px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      background: var(--bg-cream-soft);
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+
+    .area-number-input:focus {
+      border-color: var(--accent-olive);
+    }
+
+    .area-unit {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      pointer-events: none;
+    }
+
+    .calc-range {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: var(--bg-sand);
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+      accent-color: var(--accent-olive);
+    }
+
+    .calc-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-olive);
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(82, 102, 64, 0.4);
+      border: 2px solid #FFFFFF;
+      transition: transform 0.15s ease;
+    }
+
+    .calc-range::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    .calc-presets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .preset-btn {
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-sand);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+
+    .preset-btn:hover {
+      background: var(--accent-sage-light);
+      color: var(--accent-olive);
+      border-color: var(--accent-sage-border);
+    }
+
+    /* Extras Checkboxes */
+    .extras-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .extra-checkbox-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-cream-soft);
+      cursor: pointer;
+      font-size: 0.92rem;
+      transition: border-color 0.2s;
+    }
+
+    .extra-checkbox-label:hover {
+      border-color: var(--accent-sage);
+    }
+
+    .extra-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .extra-checkbox-label input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent-olive);
+      cursor: pointer;
+    }
+
+    .extra-price {
+      font-weight: 600;
+      color: var(--accent-olive);
+      font-size: 0.88rem;
+    }
+
+    /* Calculator Summary Sidebar */
+    .calc-summary {
+      background: linear-gradient(145deg, #F9F6EE 0%, #EFF4EA 100%);
+      border: 1px solid var(--accent-sage-border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .summary-header {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .summary-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--text-main);
+    }
+
+    .summary-total-box {
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid rgba(82, 102, 64, 0.2);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .summary-total-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-light);
+      margin-bottom: 4px;
+    }
+
+    .summary-total-value {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent-olive);
+      line-height: 1;
+    }
+
+    .summary-rate-pill {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .summary-meta-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-subtle);
+    }
+
+    .summary-meta-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .summary-meta-item strong {
+      color: var(--text-main);
+    }
+
+    .summary-guarantee-note {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.4;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    /* ==========================================================================
+       SECTION: CONTACTS & BOOKING FORM
+       Phones: +7 (952) 574-51-77, +7 (928) 197-23-88
+       ========================================================================== */
+    .section-contacts {
+      padding: 80px 0;
+      background-color: var(--bg-cream-soft);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .contacts-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-card-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-sage-light);
+      color: var(--accent-olive);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .contact-card-label {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    .contact-phone-link {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .contact-phone-link:hover {
+      color: var(--accent-olive);
+    }
+
+    /* Contact Form */
+    .booking-form-wrap {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-title {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    .form-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-cream-soft);
+      font-size: 0.96rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--accent-olive);
+      background-color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(82, 102, 64, 0.15);
+    }
+
+    .form-checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      cursor: pointer;
+    }
+
+    .form-checkbox-label input {
+      margin-top: 3px;
+      accent-color: var(--accent-olive);
+    }
+
+    .form-success-alert {
+      display: none;
+      background-color: var(--accent-sage-light);
+      border: 1px solid var(--accent-sage-border);
+      color: var(--accent-olive);
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.94rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background-color: #211912;
+      color: #E2DBD1;
+      padding: 60px 0 30px;
+      border-top: 1px solid #362C23;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .footer-desc {
+      font-size: 0.88rem;
+      color: #A99E91;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    .footer-links-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: #C0B5A7;
+    }
+
+    .footer-links-list a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid #362C23;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #8C8072;
+    }
+
+    /* ==========================================================================
+       MODAL DIALOG (Callback / Request)
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(40, 31, 23, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-dialog {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      width: 100%;
+      max-width: 480px;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+      animation: modalFadeIn 0.25s ease-out;
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg-sand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      font-size: 1.2rem;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       COOKIE BANNER
+       ========================================================================== */
+    .cookie-banner {
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      max-width: 520px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--accent-sage-border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 32px rgba(40, 31, 23, 0.16);
+      padding: 18px 20px;
+      z-index: 1900;
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+      animation: cookieSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .cookie-banner.show {
+      display: flex;
+    }
+
+    @keyframes cookieSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cookie-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-main);
+    }
+
+    .cookie-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .cookie-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .link-underlined {
+      color: var(--accent-olive);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .link-underlined:hover {
+      color: var(--accent-olive-hover);
+    }
+
+    /* Privacy Policy Modal */
+    .privacy-dialog {
+      max-width: 780px;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 34px 26px;
+    }
+
+    .privacy-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .privacy-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .privacy-body ul {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       768px+: Tablets & Desktops
+       3 columns for the 15 items on desktop, 1 on mobile
+       ========================================================================== */
+    @media (min-width: 768px) {
+      .header-contacts {
+        display: flex;
+      }
+
+      .nav-desktop {
+        display: block;
+      }
+
+      .burger-btn {
+        display: none;
+      }
+
+      .hero {
+        padding: 60px 0 90px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 50px;
+      }
+
+      .hero-ctas {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .usp-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* Exactly 3 columns on desktop for the 15 services list as required */
+      .checklist-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .segments-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .calc-wrapper {
+        grid-template-columns: 1.2fr 0.8fr;
+        padding: 40px;
+      }
+
+      .type-switcher {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .extras-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contacts-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .cookie-banner {
+        bottom: 24px;
+        right: 24px;
+        left: auto;
+        max-width: 460px;
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .usp-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .calc-wrapper {
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="logo-block" aria-label="Чистота.161 — На главную">
+        <span class="logo-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+          Чистота<span class="logo-region">.161</span>
+        </span>
+        <span class="logo-caption">Премиальный клининг • Ростов-на-Дону</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Основное меню">
+        <ul>
+          <li><a href="#services">15 этапов</a></li>
+          <li><a href="#calculator">Калькулятор</a></li>
+          <li><a href="#segments">B2B & B2C</a></li>
+          <li><a href="#guarantees">Стандарты & NDA</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Contact Snippet -->
+      <div class="header-contacts">
+        <a href="tel:+79525745177" class="header-phone" aria-label="Позвонить: +7 (952) 574-51-77">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +7 (952) 574-51-77
+        </a>
+        <span class="header-schedule">Ежедневно 8:00 – 22:00</span>
+      </div>
+
+      <!-- Quick CTA Button -->
+      <a href="#calculator" class="btn btn-primary btn-sm" style="display: none;" id="headerCtaBtn">Смета онлайн</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="burger-btn" id="burgerToggle" aria-label="Открыть мобильное меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="badge-pill" style="align-self: flex-start;">
+      <span>Клининг премиум-класса</span>
+    </div>
+    <ul>
+      <li><a href="#services" class="mobile-nav-link">15 этапов генеральной</a></li>
+      <li><a href="#calculator" class="mobile-nav-link">Калькулятор сметы</a></li>
+      <li><a href="#segments" class="mobile-nav-link">Для бизнеса (B2B) и B2C</a></li>
+      <li><a href="#guarantees" class="mobile-nav-link">Гарантии, договор и NDA</a></li>
+      <li><a href="#contacts" class="mobile-nav-link">Контакты и адрес</a></li>
+    </ul>
+
+    <div class="mobile-contacts-box">
+      <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-light); font-weight: 600;">Прямая связь с технологом:</span>
+      <a href="tel:+79525745177" class="header-phone" style="font-size: 1.15rem;">
+        +7 (952) 574-51-77
+      </a>
+      <a href="tel:+79281972388" class="header-phone" style="font-size: 1.15rem;">
+        +7 (928) 197-23-88
+      </a>
+      <a href="#calculator" class="btn btn-primary mobile-nav-link" style="margin-top: 8px;">
+        Рассчитать стоимость онлайн
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HERO BLOCK
+         H1, Subtitle, 2 CTAs, Trust indicators & CSS gradient placeholder visual
+         ========================================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            Ростов-на-Дону и Ростовская область (161 регион)
+          </div>
+
+          <h1 id="hero-title">
+            Безупречная чистота с гарантией сохранности и конфиденциальности
+          </h1>
+
+          <p class="hero-subtitle">
+            Профессиональный клининг премиум B2C (коттеджи, квартиры после ремонта) и B2B (офисы, склады). Фиксированная смета до начала работ, строгий договор и соблюдение NDA.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#calculator" class="btn btn-primary" id="heroCalculateBtn">
+              Рассчитать стоимость онлайн
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+79525745177" class="btn btn-secondary" id="heroCallBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Связаться с технологом
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span><strong>Строгий NDA:</strong> Защита частной жизни и коммерческой тайны</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span><strong>Договор и смета:</strong> Стоимость не изменится в процессе</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Gradient Placeholder Card -->
+        <div class="hero-visual-card" aria-label="Премиальный сервис клининга Чистота.161">
+          <div class="hero-visual-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Немецкая эко-химия Kiehl & Buzil
+          </div>
+
+          <div class="hero-visual-center">
+            <div class="avatar-icon-circle" aria-hidden="true">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="hero-visual-title" style="font-size: 1.35rem; margin-bottom: 4px;">Служба контроля качества</h2>
+            <p class="hero-visual-desc">Бригады клинеров с опытом от 4 лет под постоянным надзором выездного технолога</p>
+          </div>
+
+          <div class="hero-visual-tags">
+            <span class="hero-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Kärcher Professional
+            </span>
+            <span class="hero-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              100% материальная ответственность
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: УТП & ГАРАНТИИ (NDA, Договор, Фиксированная смета)
+         ========================================================================== -->
+    <section class="section-usp" id="guarantees" aria-labelledby="usp-heading">
+      <div class="container">
+        <h2 id="usp-heading">Наши стандарты безопасности и гарантии</h2>
+        <p class="section-subtitle">
+          Мы понимаем ценность приватности и дорогостоящих интерьеров. Работа строится на взаимном доверии, закрепленном юридически.
+        </p>
+
+        <div class="usp-grid">
+          <!-- USP 1: NDA -->
+          <article class="usp-card">
+            <div class="usp-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="usp-title">Строгий NDA</h3>
+            <p class="usp-text">
+              Полный запрет на фото- и видеосъемку личных вещей, документации и интерьеров. Клинеры проходят проверку службы безопасности.
+            </p>
+          </article>
+
+          <!-- USP 2: Договор -->
+          <article class="usp-card">
+            <div class="usp-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3 class="usp-title">Официальный договор</h3>
+            <p class="usp-text">
+              Юридически закрепленная 100% ответственность за сохранность отделки: натурального мрамора, массива дуба, латуни и текстиля.
+            </p>
+          </article>
+
+          <!-- USP 3: Смета -->
+          <article class="usp-card">
+            <div class="usp-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                <path d="M12 18V6"></path>
+              </svg>
+            </div>
+            <h3 class="usp-title">Фиксированная смета</h3>
+            <p class="usp-text">
+              Окончательная цена утверждается до начала клининга. Никаких внезапных доплат, скрытых коэффициентов и надбавок «на месте».
+            </p>
+          </article>
+
+          <!-- USP 4: Эко-технологии -->
+          <article class="usp-card">
+            <div class="usp-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="usp-title">Премиум эко-составы</h3>
+            <p class="usp-text">
+              Европейская сертифицированная химия без едкого запаха. Абсолютно безопасна для детей, домашних питомцев и аллергиков.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION: ГЕНЕРАЛЬНАЯ УБОРКА (Exact 15 Items, 3 columns desktop, 1 column mobile)
+       ========================================================================== -->
+    <section class="section-checklist" id="services" aria-labelledby="checklist-heading">
+      <div class="container">
+        <h2 id="checklist-heading">Генеральная уборка: 15 обязательных этапов</h2>
+        <p class="section-subtitle">
+          Стандарт компании «Чистота.161». Мы сдаем объект строго по расширенному регламенту — без пропущенных углов и поверхностей.
+        </p>
+
+        <!-- 3 Columns on desktop, 1 on mobile -->
+        <div class="checklist-grid" role="list">
+          <!-- Item 1 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">01</span>
+            <span class="check-text">Обеспыливание стен;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">02</span>
+            <span class="check-text">Вымывание осветительных приборов;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">03</span>
+            <span class="check-text">Вымывание кондиционера (фасад);</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">04</span>
+            <span class="check-text">Вымывание фурнитуры;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">05</span>
+            <span class="check-text">Вымывание дверей с двух сторон;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">06</span>
+            <span class="check-text">Вымывание кухонного фасада;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">07</span>
+            <span class="check-text">Вымывание рабочей поверхности кухни;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">08</span>
+            <span class="check-text">Вымывание плиты;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">09</span>
+            <span class="check-text">Вымывание зеркал;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">10</span>
+            <span class="check-text">Вымывание обеденного стола;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">11</span>
+            <span class="check-text">Вымывание стульев;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">12</span>
+            <span class="check-text">Вымывание плитки в ванной;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 13 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">13</span>
+            <span class="check-text">Вымывание унитаза/биде/ванной;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 14 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">14</span>
+            <span class="check-text">Вымывание пола и плинтуса;</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <!-- Item 15 -->
+          <div class="check-item" role="listitem">
+            <span class="check-number">15</span>
+            <span class="check-text">Вымывание окон.</span>
+            <svg class="check-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <div class="checklist-footer">
+          <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-main);">
+            Нужно убрать помещение после капитального ремонта или подготовить коммерческий объект?
+          </p>
+          <a href="#calculator" class="btn btn-primary">
+            Рассчитать смету по вашей площади
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION: НАПРАВЛЕНИЯ B2B & B2C
+       ========================================================================== -->
+    <section class="section-segments" id="segments" aria-labelledby="segments-heading">
+      <div class="container">
+        <h2 id="segments-heading">Решения для частных клиентов и бизнеса</h2>
+        <p class="section-subtitle">
+          Индивидуальный подход под задачи частных резиденций и строгие стандарты коммерческих пространств.
+        </p>
+
+        <div class="segments-grid">
+          <!-- B2C Segment -->
+          <article class="segment-card">
+            <div class="segment-header">
+              <span class="segment-tag">Премиальный B2C</span>
+              <h3 class="segment-title">Коттеджи & Квартиры после ремонта</h3>
+              <p class="segment-desc">
+                Деликатный клининг жилья премиум-класса с бережным отношением к авторскому интерьеру.
+              </p>
+            </div>
+
+            <ul class="segment-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Удаление строительной пыли, эпоксидной затирки и следов малярного скотча</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Уход за мрамором, ониксом, паркетом, декоративной штукатуркой и лепниной</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Возможность уборки в отсутствие владельца с персональным отчетом технолога</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Обеспыливание гардеробных зон, деликатный уход за люстрами и хрусталем</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary open-modal-btn" data-target-type="b2c" style="margin-top: auto;">
+              Заказать выезд технолога для B2C
+            </button>
+          </article>
+
+          <!-- B2B Segment -->
+          <article class="segment-card">
+            <div class="segment-header">
+              <span class="segment-tag">Корпоративный B2B</span>
+              <h3 class="segment-title">Офисы, Склады & Коммерция</h3>
+              <p class="segment-desc">
+                Профессиональное обслуживание бизнес-центров, складских комплексов и торговых площадок.
+              </p>
+            </div>
+
+            <ul class="segment-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Безналичный расчет с полным пакетом закрывающих документов (ЭДО)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Работа в ночные часы и выходные дни без остановки бизнес-процессов</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Промышленное обеспыливание стеллажей, балок и напольных покрытий складов</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Строгое соблюдение корпоративного регламента безопасности и условий NDA</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary open-modal-btn" data-target-type="b2b" style="margin-top: auto;">
+              Запросить КП для юридических лиц
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION: КАЛЬКУЛЯТОР
+       Input: Area (m2), Type (General = area*120, After repair = area*180)
+       Real-time calculation
+       ========================================================================== -->
+    <section class="section-calculator" id="calculator" aria-labelledby="calc-heading">
+      <div class="container">
+        <h2 id="calc-heading">Онлайн-калькулятор стоимости</h2>
+        <p class="section-subtitle">
+          Укажите параметры объекта для расчета предварительной сметы в реальном времени.
+        </p>
+
+        <div class="calc-wrapper">
+          <!-- Controls Form -->
+          <div class="calc-controls">
+            <!-- 1. Cleaning Type -->
+            <div class="calc-group">
+              <span class="calc-label">1. Выберите тип уборки:</span>
+              <div class="type-switcher" role="radiogroup" aria-label="Тип уборки">
+                <label class="type-option active" id="typeOptionGeneral">
+                  <input type="radio" name="cleaningType" value="general" checked>
+                  <div class="type-option-title">
+                    <span>Генеральная уборка</span>
+                    <span class="type-option-rate">120 ₽/м²</span>
+                  </div>
+                  <div class="type-option-desc">Комплексная уборка всех 15 зон и поверхностей</div>
+                </label>
+
+                <label class="type-option" id="typeOptionRepair">
+                  <input type="radio" name="cleaningType" value="after_repair">
+                  <div class="type-option-title">
+                    <span>После ремонта</span>
+                    <span class="type-option-rate">180 ₽/м²</span>
+                  </div>
+                  <div class="type-option-desc">Удаление строительной пыли, краски, клея и затирки</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. Area Input -->
+            <div class="calc-group">
+              <div class="calc-label">
+                <label for="areaInput">2. Площадь помещения:</label>
+                <span id="areaLabelValue" style="color: var(--accent-olive); font-weight: 700;">60 м²</span>
+              </div>
+
+              <div class="area-input-row">
+                <input type="range" class="calc-range" id="areaSlider" min="20" max="400" step="5" value="60" aria-label="Ползунок площади в м2">
+                <div class="area-number-wrap">
+                  <input type="number" class="area-number-input" id="areaInput" min="10" max="2000" value="60" aria-label="Числовое поле площади">
+                  <span class="area-unit">м²</span>
+                </div>
+              </div>
+
+              <!-- Quick Presets -->
+              <div class="calc-presets" aria-label="Быстрый выбор площади">
+                <button type="button" class="preset-btn" data-area="45">45 м²</button>
+                <button type="button" class="preset-btn" data-area="65">65 м²</button>
+                <button type="button" class="preset-btn" data-area="100">100 м²</button>
+                <button type="button" class="preset-btn" data-area="160">160 м²</button>
+                <button type="button" class="preset-btn" data-area="250">250 м²</button>
+              </div>
+            </div>
+
+            <!-- 3. Additional Services -->
+            <div class="calc-group">
+              <span class="calc-label">3. Дополнительные опции (по желанию):</span>
+              <div class="extras-grid">
+                <label class="extra-checkbox-label">
+                  <div class="extra-left">
+                    <input type="checkbox" id="extraSofa" data-price="2500">
+                    <span>Химчистка дивана</span>
+                  </div>
+                  <span class="extra-price">+2 500 ₽</span>
+                </label>
+
+                <label class="extra-checkbox-label">
+                  <div class="extra-left">
+                    <input type="checkbox" id="extraOven" data-price="1200">
+                    <span>Мытье духового шкафа внутри</span>
+                  </div>
+                  <span class="extra-price">+1 200 ₽</span>
+                </label>
+
+                <label class="extra-checkbox-label">
+                  <div class="extra-left">
+                    <input type="checkbox" id="extraFridge" data-price="1000">
+                    <span>Вымывание холодильника внутри</span>
+                  </div>
+                  <span class="extra-price">+1 000 ₽</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real-time Summary Card -->
+          <div class="calc-summary" aria-live="polite">
+            <div class="summary-header">
+              <span class="badge-pill" style="align-self: flex-start; margin-bottom: 6px;">Предварительный расчет</span>
+              <h3 class="summary-title">Итоговая смета объекта</h3>
+            </div>
+
+            <div class="summary-total-box">
+              <div class="summary-total-label">Расчетная стоимость:</div>
+              <div class="summary-total-value" id="calcTotalPrice">7 200 ₽</div>
+              <div class="summary-rate-pill" id="calcRateDescription">Базовый тариф: 120 ₽/м²</div>
+            </div>
+
+            <ul class="summary-meta-list">
+              <li class="summary-meta-item">
+                <span>Время уборки:</span>
+                <strong id="calcTimeEst">4–5 часов</strong>
+              </li>
+              <li class="summary-meta-item">
+                <span>Рекомендуемая бригада:</span>
+                <strong id="calcTeamEst">2 специалиста + технолог</strong>
+              </li>
+              <li class="summary-meta-item">
+                <span>Эко-химия и расходники:</span>
+                <strong>Включены в смету</strong>
+              </li>
+            </ul>
+
+            <div class="summary-guarantee-note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2" style="flex-shrink: 0;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Сумма фиксируется в официальном договоре и не подлежит увеличению в день уборки.</span>
+            </div>
+
+            <button class="btn btn-primary" id="calcLockPriceBtn">
+              Зафиксировать эту цену в смете
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION: CONTACTS & BOOKING FORM
+       Phones: +7 (952) 574-51-77, +7 (928) 197-23-88
+       ========================================================================== -->
+    <section class="section-contacts" id="contacts" aria-labelledby="contacts-heading">
+      <div class="container">
+        <h2 id="contacts-heading">Свяжитесь с нами</h2>
+        <p class="section-subtitle">
+          Готовы ответить на любые вопросы, проконсультировать по материалам и направить технолога для бесплатного замера.
+        </p>
+
+        <div class="contacts-grid">
+          <!-- Info Column -->
+          <div class="contacts-info">
+            <!-- Phone 1 -->
+            <div class="contact-card-box">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Телефон старшего технолога:</span>
+                <a href="tel:+79525745177" class="contact-phone-link">+7 (952) 574-51-77</a>
+                <span style="font-size: 0.85rem; color: var(--text-light);">Консультации, оценка сложных пятен и смета</span>
+              </div>
+            </div>
+
+            <!-- Phone 2 -->
+            <div class="contact-card-box">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Отдел договоров и B2B:</span>
+                <a href="tel:+79281972388" class="contact-phone-link">+7 (928) 197-23-88</a>
+                <span style="font-size: 0.85rem; color: var(--text-light);">Работа с юр. лицами, акты, выставление счетов</span>
+              </div>
+            </div>
+
+            <!-- Territory & Schedule -->
+            <div class="contact-card-box">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Режим работы и география:</span>
+                <strong style="color: var(--text-main); font-size: 1rem;">Ежедневно: 08:00 – 22:00</strong>
+                <span style="font-size: 0.88rem; color: var(--text-muted); margin-top: 2px;">
+                  Ростов-на-Дону, Батайск, Аксай, Чалтырь и выезды по всей Ростовской области (161 регион).
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="booking-form-wrap">
+            <h3 class="form-title">Заявка на расчет сметы</h3>
+            <p class="form-desc">Заполните поля — перезвоним в течение 10 минут с детальным расчетом.</p>
+
+            <form class="booking-form" id="mainBookingForm">
+              <div class="form-group">
+                <label for="formClientName">Ваше имя *</label>
+                <input type="text" id="formClientName" class="form-input" placeholder="Иван" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formClientPhone">Номер телефона *</label>
+                <input type="tel" id="formClientPhone" class="form-input" placeholder="+7 (999) 000-00-00" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formClientType">Тип объекта</label>
+                <select id="formClientType" class="form-select">
+                  <option value="apartment">Квартира (генеральная уборка)</option>
+                  <option value="after_repair">Объект после ремонта</option>
+                  <option value="cottage">Загородный дом / Коттедж</option>
+                  <option value="office">Офис / Бизнес-центр (B2B)</option>
+                  <option value="warehouse">Складское помещение (B2B)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formClientComment">Примерная площадь или пожелания</label>
+                <textarea id="formClientComment" rows="3" class="form-textarea" placeholder="Например: 85 м², дом в Батайске, нужна химчистка мебели"></textarea>
+              </div>
+
+              <label class="form-checkbox-label">
+                <input type="checkbox" required checked>
+                <span>Согласен на <a href="#" class="open-privacy-link link-underlined">обработку персональных данных</a> и условия строгого NDA</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">
+                Отправить заявку на бесплатный расчет
+              </button>
+
+              <div class="form-success-alert" id="formSuccessMessage">
+                <strong>Спасибо! Заявка успешно зафиксирована.</strong><br>
+                Смета закреплена в системе компании «Чистота.161». Старший технолог свяжется с вами для согласования времени выезда.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Чистота.161</div>
+          <p class="footer-desc">
+            Премиальный сервис клининга в Ростове-на-Дону и Ростовской области. Надежный партнер для владельцев резиденций и бизнеса.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Услуги</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">15 этапов генеральной уборки</a></li>
+            <li><a href="#calculator">Уборка после ремонта</a></li>
+            <li><a href="#segments">Клининг коттеджей</a></li>
+            <li><a href="#segments">B2B клининг офисов и складов</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Стандарты & Защита</h4>
+          <ul class="footer-links-list">
+            <li><a href="#" class="open-privacy-link">Политика конфиденциальности</a></li>
+            <li><a href="#" class="open-privacy-link">Соглашение о неразглашении (NDA)</a></li>
+            <li><a href="#" class="open-cookie-settings-link">Настройки файлов cookie</a></li>
+            <li><a href="#guarantees">Материальная ответственность</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Контакты 161</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+79525745177">+7 (952) 574-51-77</a></li>
+            <li><a href="tel:+79281972388">+7 (928) 197-23-88</a></li>
+            <li>Ростов-на-Дону и область</li>
+            <li>Ежедневно: 08:00 – 22:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Клининговая компания «Чистота.161». Все права защищены.</span>
+        <span>
+          <a href="#" class="open-privacy-link" style="color: inherit; text-decoration: underline;">Политика конфиденциальности (152-ФЗ)</a> • Строгий NDA • Фиксированная смета
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG (Fast Order / Lock Price)
+       ========================================================================== -->
+  <div class="modal-overlay" id="quickModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Закрыть модальное окно">×</button>
+      <h3 id="modalTitle" class="serif-font" style="font-size: 1.4rem; margin-bottom: 8px;">Фиксация стоимости по смете</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;" id="modalSubtitle">
+        Заполните контакты, чтобы забронировать выезд бригады по текущему расчету.
+      </p>
+
+      <form class="booking-form" id="modalForm">
+        <div class="form-group">
+          <label for="modalName">Ваше имя</label>
+          <input type="text" id="modalName" class="form-input" placeholder="Иван" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalPhone">Телефон для подтверждения</label>
+          <input type="tel" id="modalPhone" class="form-input" placeholder="+7 (999) 000-00-00" required>
+        </div>
+
+        <div style="background: var(--bg-cream-soft); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.88rem;">
+          <span style="color: var(--text-light);">Параметры сметы:</span><br>
+          <strong id="modalSummaryInfo">Генеральная уборка, 60 м² — 7 200 ₽</strong>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 6px;">
+          Зафиксировать смету
+        </button>
+
+        <div class="form-success-alert" id="modalSuccessMessage">
+          <strong>Заявка принята!</strong> Мы зафиксировали вашу смету. Скоро перезвоним для подтверждения времени.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       COOKIE CONSENT BANNER
+       ========================================================================== -->
+  <div class="cookie-banner" id="cookieBanner" role="region" aria-label="Уведомление об использовании файлов cookie">
+    <div class="cookie-header">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-olive)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+        <path d="M8.5 8.5v.01"></path>
+        <path d="M11.5 15.5v.01"></path>
+        <path d="M15.5 11.5v.01"></path>
+        <path d="M7 13.5v.01"></path>
+      </svg>
+      <span>Файлы cookie и защита данных</span>
+    </div>
+    <p class="cookie-text">
+      Мы используем файлы cookie для сохранения расчетов онлайн-калькулятора и корректной работы сервиса в соответствии с 152-ФЗ РФ. Подробнее в нашей <a href="#" class="link-underlined open-privacy-link">Политике конфиденциальности</a>.
+    </p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-primary btn-sm" id="acceptAllCookiesBtn">Принять все</button>
+      <button type="button" class="btn btn-secondary btn-sm" id="acceptEssentialCookiesBtn">Только необходимые</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PRIVACY POLICY & NDA MODAL (152-ФЗ РФ)
+       ========================================================================== -->
+  <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-dialog privacy-dialog">
+      <button class="modal-close-btn" id="privacyCloseBtn" aria-label="Закрыть политику конфиденциальности">×</button>
+      <h3 id="privacyTitle" class="serif-font" style="font-size: 1.45rem; margin-bottom: 6px;">
+        Политика конфиденциальности и защиты данных
+      </h3>
+      <p style="font-size: 0.84rem; color: var(--text-light); margin-bottom: 20px;">
+        Клининговая компания «Чистота.161» • г. Ростов-на-Дону и Ростовская область • Редакция 2026 г.
+      </p>
+
+      <div class="privacy-body">
+        <section>
+          <h4 class="privacy-section-title">1. Общие положения</h4>
+          <p>
+            Настоящая Политика обработки персональных данных составлена в соответствии с Федеральным законом РФ № 152-ФЗ «О персональных данных» и регламентирует порядок обращения с информацией клиентов клининговой компании «Чистота.161».
+          </p>
+        </section>
+
+        <section>
+          <h4 class="privacy-section-title">2. Перечень собираемых данных</h4>
+          <p>При использовании онлайн-калькулятора и оформлении заявки на клининг мы обрабатываем:</p>
+          <ul>
+            <li>Имя контактного лица или представителя организации;</li>
+            <li>Контактный номер телефона для подтверждения и связи с технологом;</li>
+            <li>Параметры объекта: тип недвижимости (квартира, коттедж, офис, склад), площадь помещения в м²;</li>
+            <li>Выбранные дополнительные услуги (химчистка мебели, духовой шкаф, холодильник);</li>
+            <li>Рассчитанную стоимость по утвержденному тарифу;</li>
+            <li>Файлы cookie (технические параметры сессии и сохраненной сметы).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4 class="privacy-section-title">3. Куда попадают данные при нажатии «Зафиксировать смету»?</h4>
+          <p>
+            В момент, когда вы нажимаете кнопку <strong>«Зафиксировать смету»</strong>:
+          </p>
+          <ul>
+            <li><strong>1. Защищенная диспетчерская система (CRM):</strong> Сформированная заявка с уникальным номером (ID) и расчетом поступает дежурному старшему технологу компании «Чистота.161» в г. Ростове-на-Дону.</li>
+            <li><strong>2. Гарантия неизменности цены:</strong> Зафиксированная смета закрепляется за вашим номером телефона. Это исключает навязывание дополнительных коэффициентов на объекте.</li>
+            <li><strong>3. Локальное сохранение в браузере:</strong> Данные также дублируются в локальное хранилище вашего устройства (localStorage), чтобы при повторном посещении сайта вам не приходилось вводить параметры заново.</li>
+            <li><strong>4. Безопасность и отсутствие спама:</strong> Ваши контакты используются исключительно для согласования клининга, никогда не передаются коллекторам, спам-базам или сторонним рекламодателям.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4 class="privacy-section-title">4. Строгий режим NDA (Конфиденциальность в премиум-сегменте)</h4>
+          <p>
+            Мы обслуживаем частные резиденции, коттеджи премиум-класса и коммерческие объекты с повышенными требованиями к приватности:
+          </p>
+          <ul>
+            <li>Категорически запрещена фото- и видеосъемка документов, интерьеров, гардеробных и личных вещей;</li>
+            <li>Клинеры проходят проверку службы безопасности и подписывают персональное соглашение о неразглашении;</li>
+            <li>Для B2B-клиентов подписывается двусторонний договор с пунктом о коммерческой тайне (NDA).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4 class="privacy-section-title">5. Использование файлов cookie</h4>
+          <p>
+            Файлы cookie применяются для технического функционирования интерактивного калькулятора, запоминания выбранных тарифов и площади помещения. Вы можете управлять cookie через настройки вашего браузера или воспользоваться кнопкой «Настройки файлов cookie» внизу страницы.
+          </p>
+        </section>
+
+        <section>
+          <h4 class="privacy-section-title">6. Контакты и отзыв согласия</h4>
+          <p>
+            Вы вправе в любой момент отозвать согласие на обработку данных или запросить удаление истории заявок, связавшись с нами:
+            <br><strong>Телефоны:</strong> +7 (952) 574-51-77, +7 (928) 197-23-88
+            <br><strong>Регион:</strong> Ростов-на-Дону, Батайск, Аксай и Ростовская область (161 регион).
+          </p>
+        </section>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="privacyUnderstoodBtn" style="width: 100%; margin-top: 24px;">
+        Понятно, закрыть
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT: BURGER MENU & REAL-TIME CALCULATOR
+       Zero external libraries/CDN. Strict error-free implementation.
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // --- Mobile Burger Menu ---
+      var burgerBtn = document.getElementById('burgerToggle');
+      var mobileMenu = document.getElementById('mobileMenu');
+      var mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMenu() {
+        var isOpen = mobileMenu.classList.contains('open');
+        if (isOpen) {
+          mobileMenu.classList.remove('open');
+          burgerBtn.classList.remove('active');
+          burgerBtn.setAttribute('aria-expanded', 'false');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        } else {
+          mobileMenu.classList.add('open');
+          burgerBtn.classList.add('active');
+          burgerBtn.setAttribute('aria-expanded', 'true');
+          mobileMenu.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (mobileMenu.classList.contains('open')) {
+              toggleMenu();
+            }
+          });
+        });
+      }
+
+      // --- Calculator Logic ---
+      // Rates per requirements: General = 120, After repair = 180
+      var RATES = {
+        general: 120,
+        after_repair: 180
+      };
+
+      var areaSlider = document.getElementById('areaSlider');
+      var areaInput = document.getElementById('areaInput');
+      var areaLabelValue = document.getElementById('areaLabelValue');
+      var typeOptions = document.querySelectorAll('.type-option');
+      var typeRadios = document.querySelectorAll('input[name="cleaningType"]');
+      var extraSofa = document.getElementById('extraSofa');
+      var extraOven = document.getElementById('extraOven');
+      var extraFridge = document.getElementById('extraFridge');
+      var presetBtns = document.querySelectorAll('.preset-btn');
+
+      // Display elements
+      var calcTotalPrice = document.getElementById('calcTotalPrice');
+      var calcRateDescription = document.getElementById('calcRateDescription');
+      var calcTimeEst = document.getElementById('calcTimeEst');
+      var calcTeamEst = document.getElementById('calcTeamEst');
+      var modalSummaryInfo = document.getElementById('modalSummaryInfo');
+
+      function formatNumber(num) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      }
+
+      function getSelectedType() {
+        var selected = 'general';
+        typeRadios.forEach(function (radio) {
+          if (radio.checked) {
+            selected = radio.value;
+          }
+        });
+        return selected;
+      }
+
+      function calculate() {
+        if (!areaInput) return;
+
+        var area = parseInt(areaInput.value, 10);
+        if (isNaN(area) || area < 1) area = 20;
+
+        var type = getSelectedType();
+        var rate = RATES[type] || RATES.general;
+        var basePrice = area * rate;
+
+        var extrasTotal = 0;
+        if (extraSofa && extraSofa.checked) extrasTotal += parseInt(extraSofa.getAttribute('data-price') || '0', 10);
+        if (extraOven && extraOven.checked) extrasTotal += parseInt(extraOven.getAttribute('data-price') || '0', 10);
+        if (extraFridge && extraFridge.checked) extrasTotal += parseInt(extraFridge.getAttribute('data-price') || '0', 10);
+
+        var finalPrice = basePrice + extrasTotal;
+
+        // Update displays
+        if (calcTotalPrice) {
+          calcTotalPrice.textContent = formatNumber(finalPrice) + ' ₽';
+        }
+
+        if (areaLabelValue) {
+          areaLabelValue.textContent = area + ' м²';
+        }
+
+        if (calcRateDescription) {
+          var typeName = type === 'after_repair' ? 'После ремонта' : 'Генеральная уборка';
+          calcRateDescription.textContent = typeName + ': ' + rate + ' ₽/м²';
+        }
+
+        // Teams and time estimation
+        if (calcTimeEst && calcTeamEst) {
+          if (area <= 50) {
+            calcTimeEst.textContent = type === 'after_repair' ? '4–5 часов' : '3–4 часа';
+            calcTeamEst.textContent = '1–2 клинера + технолог';
+          } else if (area <= 90) {
+            calcTimeEst.textContent = type === 'after_repair' ? '5–7 часов' : '4–5 часов';
+            calcTeamEst.textContent = '2–3 клинера + технолог';
+          } else if (area <= 160) {
+            calcTimeEst.textContent = type === 'after_repair' ? '6–8 часов' : '5–6 часов';
+            calcTeamEst.textContent = '3–4 клинера + бригадир';
+          } else {
+            calcTimeEst.textContent = '6–9 часов (бригада)';
+            calcTeamEst.textContent = Math.ceil(area / 45) + ' специалистов + бригадир';
+          }
+        }
+
+        // Keep modal summary updated
+        if (modalSummaryInfo) {
+          var currentTypeName = type === 'after_repair' ? 'После ремонта' : 'Генеральная уборка';
+          modalSummaryInfo.textContent = currentTypeName + ', ' + area + ' м² — ' + formatNumber(finalPrice) + ' ₽';
+        }
+      }
+
+      // Sync slider & numeric input
+      if (areaSlider && areaInput) {
+        areaSlider.addEventListener('input', function () {
+          areaInput.value = areaSlider.value;
+          calculate();
+        });
+
+        areaInput.addEventListener('input', function () {
+          var val = parseInt(areaInput.value, 10);
+          if (!isNaN(val)) {
+            areaSlider.value = Math.min(Math.max(val, 20), 400);
+          }
+          calculate();
+        });
+      }
+
+      // Presets
+      presetBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var targetArea = btn.getAttribute('data-area');
+          if (targetArea && areaInput && areaSlider) {
+            areaInput.value = targetArea;
+            areaSlider.value = targetArea;
+            calculate();
+          }
+        });
+      });
+
+      // Type switcher
+      typeOptions.forEach(function (option) {
+        option.addEventListener('click', function () {
+          typeOptions.forEach(function (opt) { opt.classList.remove('active'); });
+          option.classList.add('active');
+          var radio = option.querySelector('input[type="radio"]');
+          if (radio) {
+            radio.checked = true;
+          }
+          calculate();
+        });
+      });
+
+      // Extra checkboxes
+      [extraSofa, extraOven, extraFridge].forEach(function (chk) {
+        if (chk) {
+          chk.addEventListener('change', calculate);
+        }
+      });
+
+      // Initial calculation
+      calculate();
+
+      // --- Order Persistence (Куда попадают данные) ---
+      function saveOrderToSystem(orderData) {
+        try {
+          var existing = JSON.parse(localStorage.getItem('chistota161_orders') || '[]');
+          existing.push(orderData);
+          localStorage.setItem('chistota161_orders', JSON.stringify(existing));
+        } catch (e) {
+          console.warn('Локальное хранилище недоступно', e);
+        }
+
+        // Логирование в консоль для наглядности (эмуляция диспетчерской CRM)
+        console.log(
+          '%c[Чистота.161 • CRM Диспетчерская]%c Зафиксирована смета ' + orderData.orderId + ' на сумму ' + formatNumber(orderData.totalPrice) + ' ₽ для ' + orderData.phone,
+          'background: #526640; color: #fff; font-weight: bold; padding: 4px 8px; border-radius: 4px;',
+          'color: #281F17; font-weight: bold;'
+        );
+      }
+
+      // --- Modal Handlers ---
+      var modal = document.getElementById('quickModal');
+      var modalCloseBtn = document.getElementById('modalCloseBtn');
+      var calcLockPriceBtn = document.getElementById('calcLockPriceBtn');
+      var openModalBtns = document.querySelectorAll('.open-modal-btn');
+      var modalForm = document.getElementById('modalForm');
+      var modalSuccessMessage = document.getElementById('modalSuccessMessage');
+
+      function openModal(customTitle) {
+        if (!modal) return;
+        if (customTitle && document.getElementById('modalTitle')) {
+          document.getElementById('modalTitle').textContent = customTitle;
+        }
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+        if (modalSuccessMessage) modalSuccessMessage.style.display = 'none';
+        if (modalForm) modalForm.reset();
+      }
+
+      if (calcLockPriceBtn) {
+        calcLockPriceBtn.addEventListener('click', function () {
+          openModal('Зафиксировать стоимость сметы');
+        });
+      }
+
+      openModalBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var type = btn.getAttribute('data-target-type');
+          if (type === 'b2b') {
+            openModal('Коммерческое предложение для B2B');
+          } else {
+            openModal('Вызов технолога для частного объекта');
+          }
+        });
+      });
+
+      if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeModal);
+      }
+
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      // Modal Form Submit (Зафиксировать смету)
+      if (modalForm) {
+        modalForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var nameInput = document.getElementById('modalName');
+          var phoneInput = document.getElementById('modalPhone');
+
+          var currentArea = parseInt((areaInput ? areaInput.value : '60'), 10) || 60;
+          var currentType = getSelectedType();
+          var rate = RATES[currentType] || 120;
+          var calcPriceText = calcTotalPrice ? calcTotalPrice.textContent : '7 200 ₽';
+          var numericPrice = parseInt(calcPriceText.replace(/\D/g, ''), 10) || (currentArea * rate);
+
+          var newOrder = {
+            orderId: 'CH161-' + Math.floor(100000 + Math.random() * 900000),
+            clientName: nameInput ? nameInput.value : '',
+            phone: phoneInput ? phoneInput.value : '',
+            cleaningType: currentType === 'after_repair' ? 'После ремонта' : 'Генеральная уборка',
+            area: currentArea,
+            totalPrice: numericPrice,
+            timestamp: new Date().toISOString(),
+            status: 'locked_estimate'
+          };
+
+          saveOrderToSystem(newOrder);
+
+          if (modalSuccessMessage) {
+            modalSuccessMessage.innerHTML = '<strong>Смета № ' + newOrder.orderId + ' успешно зафиксирована!</strong><br>' +
+              'Сумма <strong>' + formatNumber(newOrder.totalPrice) + ' ₽</strong> закреплена за вашим номером.<br>' +
+              'Старший технолог свяжется с вами по номеру ' + newOrder.phone + ' в течение 10 минут.';
+            modalSuccessMessage.style.display = 'block';
+          }
+
+          setTimeout(function () {
+            closeModal();
+          }, 3500);
+        });
+      }
+
+      // Main Contact Form Submit
+      var mainBookingForm = document.getElementById('mainBookingForm');
+      var formSuccessMessage = document.getElementById('formSuccessMessage');
+      if (mainBookingForm) {
+        mainBookingForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var nameEl = document.getElementById('formClientName');
+          var phoneEl = document.getElementById('formClientPhone');
+          var typeEl = document.getElementById('formClientType');
+          var commentEl = document.getElementById('formClientComment');
+
+          var contactOrder = {
+            orderId: 'CH161-' + Math.floor(100000 + Math.random() * 900000),
+            clientName: nameEl ? nameEl.value : '',
+            phone: phoneEl ? phoneEl.value : '',
+            objectType: typeEl ? typeEl.value : '',
+            comment: commentEl ? commentEl.value : '',
+            timestamp: new Date().toISOString(),
+            status: 'inquiry'
+          };
+
+          saveOrderToSystem(contactOrder);
+
+          if (formSuccessMessage) {
+            formSuccessMessage.innerHTML = '<strong>Заявка № ' + contactOrder.orderId + ' принята!</strong><br>' +
+              'Мы передали информацию дежурному технологу в Ростове-на-Дону. Ожидайте звонка в течение 10 минут.';
+            formSuccessMessage.style.display = 'block';
+          }
+          mainBookingForm.reset();
+        });
+      }
+
+      // --- Privacy Policy Modal Handlers ---
+      var privacyModal = document.getElementById('privacyModal');
+      var privacyCloseBtn = document.getElementById('privacyCloseBtn');
+      var privacyUnderstoodBtn = document.getElementById('privacyUnderstoodBtn');
+      var openPrivacyLinks = document.querySelectorAll('.open-privacy-link');
+
+      function openPrivacyModal(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        if (!privacyModal) return;
+        privacyModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closePrivacyModal() {
+        if (!privacyModal) return;
+        privacyModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      openPrivacyLinks.forEach(function (link) {
+        link.addEventListener('click', openPrivacyModal);
+      });
+
+      if (privacyCloseBtn) privacyCloseBtn.addEventListener('click', closePrivacyModal);
+      if (privacyUnderstoodBtn) privacyUnderstoodBtn.addEventListener('click', closePrivacyModal);
+
+      if (privacyModal) {
+        privacyModal.addEventListener('click', function (e) {
+          if (e.target === privacyModal) {
+            closePrivacyModal();
+          }
+        });
+      }
+
+      // Close modals on Esc
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' || e.keyCode === 27) {
+          closeModal();
+          closePrivacyModal();
+        }
+      });
+
+      // --- Cookie Consent Logic ---
+      var cookieBanner = document.getElementById('cookieBanner');
+      var acceptAllBtn = document.getElementById('acceptAllCookiesBtn');
+      var acceptEssentialBtn = document.getElementById('acceptEssentialCookiesBtn');
+      var openCookieSettingsLinks = document.querySelectorAll('.open-cookie-settings-link');
+
+      function showCookieBanner() {
+        if (cookieBanner) {
+          cookieBanner.classList.add('show');
+        }
+      }
+
+      function hideCookieBanner() {
+        if (cookieBanner) {
+          cookieBanner.classList.remove('show');
+        }
+      }
+
+      function setCookieConsent(status) {
+        try {
+          localStorage.setItem('chistota161_cookie_consent', status);
+        } catch (e) {}
+        hideCookieBanner();
+      }
+
+      if (acceptAllBtn) {
+        acceptAllBtn.addEventListener('click', function () {
+          setCookieConsent('all');
+        });
+      }
+
+      if (acceptEssentialBtn) {
+        acceptEssentialBtn.addEventListener('click', function () {
+          setCookieConsent('essential');
+        });
+      }
+
+      openCookieSettingsLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          showCookieBanner();
+        });
+      });
+
+      // Show banner on initial load if not decided
+      try {
+        var existingConsent = localStorage.getItem('chistota161_cookie_consent');
+        if (!existingConsent) {
+          setTimeout(showCookieBanner, 800);
+        }
+      } catch (e) {
+        setTimeout(showCookieBanner, 800);
+      }
+    })();
+  </script>
+</body>
+</html>

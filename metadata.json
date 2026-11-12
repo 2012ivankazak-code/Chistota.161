@@ -1,0 +1,6 @@
+{
+  "name": "Чистота.161 — Премиальный клининг",
+  "description": "Профессиональный клининг премиум B2C и B2B в Ростове-на-Дону и области. Фиксированная смета, договор, NDA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
